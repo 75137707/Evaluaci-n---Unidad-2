@@ -1,0 +1,144 @@
+/* styles.css - Estilos globales para todas las páginas */
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f8fcfd;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 0.2rem;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: #0d6efd !important;
+  font-weight: 600;
+  border-bottom: 2px solid #0d6efd;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #e0f2fe 0%, #d9f0f7 100%);
+  padding: 4rem 0;
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: #055160;
+}
+
+/* Tarjetas de secciones */
+.section-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2.5rem;
+  transition: transform 0.2s;
+}
+
+.section-title {
+  font-weight: 700;
+  border-left: 5px solid #0d6efd;
+  padding-left: 1rem;
+  margin-bottom: 1.8rem;
+  color: #0a2b3e;
+}
+
+/* Iconos de servicios */
+.service-icon {
+  font-size: 2.2rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas de médicos y reseñas */
+.doctor-card, .review-card, .promo-card {
+  height: 100%;
+  transition: all 0.25s ease;
+  border: none;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.doctor-card:hover, .review-card:hover, .promo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -12px rgba(0,0,0,0.1);
+}
+
+.doctor-img {
+  background-color: #e9ecef;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #2c7da0;
+}
+
+.rating-stars {
+  color: #ffc107;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.btn-reserve {
+  background: #0d6efd;
+  border-radius: 40px;
+  padding: 0.5rem 1.8rem;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: #0a2b3e;
+  color: #cddfe7;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #cddfe7;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .section-card {
+    padding: 1.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}

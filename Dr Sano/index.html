@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Dr. Sano | Excelencia en Salud</title>
+  
+  <!-- Bootstrap 5 CSS + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Estilos personalizados mínimos -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+      background-size: cover;
+      opacity: 0.3;
+    }
+    .navbar {
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.95) !important;
+    }
+    .service-card, .doctor-card, .review-card, .promo-card {
+      transition: all 0.3s ease;
+      border: none;
+      border-radius: 20px;
+    }
+    .service-card:hover, .doctor-card:hover, .review-card:hover, .promo-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    .btn-gradient {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      color: white;
+      transition: all 0.3s;
+    }
+    .btn-gradient:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(102,126,234,0.3);
+      color: white;
+    }
+    footer {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+    .section-title {
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 2px;
+    }
+    .rating-stars {
+      color: #ffc107;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="index.html" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      <i class="fas fa-hospital-user me-2" style="background: none; -webkit-text-fill-color: #667eea;"></i>Dr. Sano
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+        <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="medicos.html">Médicos</a></li>
+        <li class="nav-item"><a class="nav-link" href="resenas.html">Reseñas</a></li>
+        <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-white py-5">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-3 fw-bold mb-4">Cuidamos tu salud <br>con <span class="text-warning">excelencia y calidez</span></h1>
+        <p class="lead mb-4">Más de 20 años brindando atención médica de calidad, tecnología avanzada y un equipo humano excepcional.</p>
+        <a href="reservas.html" class="btn btn-gradient btn-lg px-5 py-3 rounded-pill">
+          <i class="fas fa-calendar-check me-2"></i>Reserva tu cita
+        </a>
+      </div>
+      <div class="col-lg-5 text-center mt-5 mt-lg-0">
+        <img src="https://placehold.co/500x400/ffffff/667eea?text=Hospital+Dr.Sano&font=poppins" alt="Hospital" class="img-fluid rounded-4 shadow-lg" style="max-height: 350px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container mt-5">
+  <!-- Sección de características rápidas -->
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="card service-card h-100 text-center p-4 shadow-sm">
+        <div class="mb-3">
+          <i class="fas fa-stethoscope fa-3x" style="color: #667eea;"></i>
+        </div>
+        <h4 class="fw-bold">Servicios médicos</h4>
+        <p class="text-muted">Más de 40 especialidades para tu atención integral.</p>
+        <a href="servicios.html" class="btn btn-outline-primary rounded-pill">Ver más →</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card service-card h-100 text-center p-4 shadow-sm">
+        <div class="mb-3">
+          <i class="fas fa-user-md fa-3x" style="color: #667eea;"></i>
+        </div>
+        <h4 class="fw-bold">Equipo médico</h4>
+        <p class="text-muted">Profesionales altamente capacitados.</p>
+        <a href="medicos.html" class="btn btn-outline-primary rounded-pill">Ver más →</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card service-card h-100 text-center p-4 shadow-sm">
+        <div class="mb-3">
+          <i class="fas fa-calendar-check fa-3x" style="color: #667eea;"></i>
+        </div>
+        <h4 class="fw-bold">Reserva tu cita</h4>
+        <p class="text-muted">Agenda de manera rápida y sencilla.</p>
+        <a href="reservas.html" class="btn btn-outline-primary rounded-pill">Reservar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estadísticas -->
+  <div class="row g-4 my-5 py-5 bg-light rounded-4">
+    <div class="col-md-3 text-center">
+      <h2 class="display-4 fw-bold" style="color: #667eea;">20+</h2>
+      <p class="text-muted">Años de experiencia</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <h2 class="display-4 fw-bold" style="color: #667eea;">50k+</h2>
+      <p class="text-muted">Pacientes atendidos</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <h2 class="display-4 fw-bold" style="color: #667eea;">40+</h2>
+      <p class="text-muted">Especialidades</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <h2 class="display-4 fw-bold" style="color: #667eea;">98%</h2>
+      <p class="text-muted">Satisfacción</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-white py-5 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <h3 class="fw-bold mb-3"><i class="fas fa-hospital-user me-2"></i>Dr. Sano</h3>
+        <p>Comprometidos con tu salud y bienestar con excelencia médica.</p>
+        <div class="mt-3">
+          <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white me-3 fs-4"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Enlaces rápidos</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+          <li class="mb-2"><a href="medicos.html" class="text-white text-decoration-none">Médicos</a></li>
+          <li class="mb-2"><a href="promociones.html" class="text-white text-decoration-none">Promociones</a></li>
+          <li class="mb-2"><a href="reservas.html" class="text-white text-decoration-none">Reservas</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Contacto</h5>
+        <p><i class="fas fa-map-marker-alt me-2"></i> Av. Los Alerces 1200, Santiago</p>
+        <p><i class="fas fa-phone me-2"></i> (56) 2 2876 5400</p>
+        <p><i class="fas fa-envelope me-2"></i> contacto@drsano.cl</p>
+        <p><i class="fas fa-clock me-2"></i> Lun a Vie: 08:00 - 20:00</p>
+      </div>
+    </div>
+    <hr class="my-4 opacity-25">
+    <div class="text-center small">
+      © 2026 Hospital Dr. Sano - Todos los derechos reservados
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

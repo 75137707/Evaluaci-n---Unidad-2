@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Dr. Sano | Historia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Poppins', sans-serif; }
+    .navbar { backdrop-filter: blur(10px); background: rgba(255,255,255,0.95) !important; }
+    .timeline-item { border-left: 3px solid #667eea; padding-left: 20px; margin-bottom: 30px; }
+    footer { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+    .mission-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="index.html" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      <i class="fas fa-hospital-user me-2"></i>Dr. Sano
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="medicos.html">Médicos</a></li>
+        <li class="nav-item"><a class="nav-link" href="resenas.html">Reseñas</a></li>
+        <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold active" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <div class="row g-5">
+    <div class="col-lg-6">
+      <h1 class="display-4 fw-bold mb-4">Nuestra <span style="color: #667eea;">Historia</span></h1>
+      <p class="lead">El Hospital Dr. Sano abrió sus puertas en 2002, fundado por un grupo de médicos visionarios.</p>
+      <p>Comenzó como una pequeña clínica familiar en el corazón de Santiago, con apenas 10 camas y 5 especialidades. Gracias a la confianza de nuestros pacientes, hoy somos un centro de referencia regional.</p>
+      
+      <h3 class="fw-bold mt-5 mb-3">Hitos importantes</h3>
+      <div class="timeline-item">
+        <h5 class="fw-bold">2002 <i class="fas fa-flag-checkered text-primary ms-2"></i></h5>
+        <p>Fundación del Hospital Dr. Sano</p>
+      </div>
+      <div class="timeline-item">
+        <h5 class="fw-bold">2010 <i class="fas fa-ambulance text-primary ms-2"></i></h5>
+        <p>Apertura del área de urgencias 24/7</p>
+      </div>
+      <div class="timeline-item">
+        <h5 class="fw-bold">2015 <i class="fas fa-magnet text-primary ms-2"></i></h5>
+        <p>Incorporación de resonancia magnética de alto campo</p>
+      </div>
+      <div class="timeline-item">
+        <h5 class="fw-bold">2020 <i class="fas fa-laptop-medical text-primary ms-2"></i></h5>
+        <p>Centro de telemedicina y consultas remotas</p>
+      </div>
+      <div class="timeline-item">
+        <h5 class="fw-bold">2024 <i class="fas fa-award text-primary ms-2"></i></h5>
+        <p>Certificación internacional en calidad asistencial</p>
+      </div>
+    </div>
+    
+    <div class="col-lg-6">
+      <div class="mission-card text-white p-5 mb-4">
+        <i class="fas fa-flag-checkered fa-3x mb-3"></i>
+        <h2 class="fw-bold">Misión</h2>
+        <p>Brindar servicios de salud integrales, accesibles y de calidad, con un equipo humano comprometido y tecnología avanzada, poniendo siempre al paciente en el centro de nuestra atención.</p>
+      </div>
+      
+      <div class="mission-card text-white p-5" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+        <i class="fas fa-glasses fa-3x mb-3"></i>
+        <h2 class="fw-bold">Visión</h2>
+        <p>Ser reconocidos como el hospital líder en innovación médica y satisfacción del paciente en la región, promoviendo bienestar y prevención en toda la comunidad.</p>
+      </div>
+      
+      <div class="mt-4 p-4 bg-light rounded-4 text-center">
+        <i class="fas fa-heartbeat fa-3x text-danger opacity-50 mb-2"></i>
+        <p class="fw-bold fs-5 fst-italic">"Tu salud es nuestra prioridad"</p>
+        <p class="text-muted">+20 años cuidando de ti y tu familia</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-white py-5 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <h3 class="fw-bold mb-3"><i class="fas fa-hospital-user me-2"></i>Dr. Sano</h3>
+        <p>Comprometidos con tu salud y bienestar.</p>
+      </div>
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Enlaces</h5>
+        <ul class="list-unstyled">
+          <li><a href="historia.html" class="text-white text-decoration-none">Historia</a></li>
+          <li><a href="medicos.html" class="text-white text-decoration-none">Médicos</a></li>
+          <li><a href="reservas.html" class="text-white text-decoration-none">Reservas</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Horario</h5>
+        <p>Lun a Vie: 08:00 - 20:00<br>Urgencias: 24/7</p>
+      </div>
+    </div>
+    <hr class="my-4 opacity-25">
+    <div class="text-center small">© 2026 Hospital Dr. Sano</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
